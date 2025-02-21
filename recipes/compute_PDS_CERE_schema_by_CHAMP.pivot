@@ -11,12 +11,29 @@
       "valueLimit": "NO_LIMIT",
       "minOccLimit": 0,
       "topnLimit": 20,
-      "globalCount": true,
+      "globalCount": false,
       "explicitValues": [],
       "keyColumns": [
         "CHAMP"
       ],
-      "valueColumns": []
+      "valueColumns": [
+        {
+          "last": false,
+          "max": false,
+          "column": "FORMAT DB",
+          "count": false,
+          "sum": false,
+          "concat": false,
+          "type": "string",
+          "$agg": "first",
+          "countDistinct": false,
+          "min": false,
+          "avg": false,
+          "stddev": false,
+          "first": true,
+          "orderColumn": "SCHEMA"
+        }
+      ]
     }
   ],
   "computedColumns": [],
