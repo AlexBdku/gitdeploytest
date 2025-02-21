@@ -45,6 +45,10 @@
         {
           "ref": "TEST_SPU_schema",
           "appendMode": false
+        },
+        {
+          "ref": "PDS_NAT_schema",
+          "appendMode": false
         }
       ]
     }
