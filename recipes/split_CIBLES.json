@@ -27,11 +27,23 @@
           "appendMode": false
         },
         {
-          "ref": "PDS_NAT_schema",
+          "ref": "PARAMETRAGE_RES_schema",
           "appendMode": false
         },
         {
-          "ref": "PARAMETRAGE_RES_schema",
+          "ref": "SFT_PRDT_schema",
+          "appendMode": false
+        },
+        {
+          "ref": "SFT_VTE_schema",
+          "appendMode": false
+        },
+        {
+          "ref": "SFT_CLIENT_schema",
+          "appendMode": false
+        },
+        {
+          "ref": "TEST_SPU_schema",
           "appendMode": false
         }
       ]
