@@ -60,8 +60,452 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
-    "userModified": false
+    "columns": [
+      {"name":"ABAT_PROPOSE_count","type":"bigint"},
+      {"name":"B_CLOTURE_count","type":"bigint"},
+      {"name":"B_GERE_count","type":"bigint"},
+      {"name":"B_PROP_BRADERIE_count","type":"bigint"},
+      {"name":"B_VENDU_12MG_count","type":"bigint"},
+      {"name":"COUT_MOYEN_12MG_count","type":"bigint"},
+      {"name":"CRLO_count","type":"bigint"},
+      {"name":"CRLO_FINAL_count","type":"bigint"},
+      {"name":"C_CERE_CODE_count","type":"bigint"},
+      {"name":"C_CERE_TYPE_count","type":"bigint"},
+      {"name":"C_ID_INT_count","type":"bigint"},
+      {"name":"C_INITIAL_PROD_REFREX_count","type":"bigint"},
+      {"name":"C_QVD_FLUX_count","type":"bigint"},
+      {"name":"C_SKU_ID_count","type":"bigint"},
+      {"name":"C_SKU_ID_CLR_count","type":"bigint"},
+      {"name":"C_TAUX_RES_count","type":"bigint"},
+      {"name":"C_TYPEPDS_count","type":"bigint"},
+      {"name":"C_TYPEPDS_SIMPLE_count","type":"bigint"},
+      {"name":"D_DATE_FAIT_count","type":"bigint"},
+      {"name":"FAIT_CRCO_ID_count","type":"bigint"},
+      {"name":"N_ANNEE_MOIS_count","type":"bigint"},
+      {"name":"N_BASE_LIGNE_count","type":"bigint"},
+      {"name":"N_CERE_ID_count","type":"bigint"},
+      {"name":"N_D3E_count","type":"bigint"},
+      {"name":"N_D3E_NB_count","type":"bigint"},
+      {"name":"N_PAS_count","type":"bigint"},
+      {"name":"N_PINV_count","type":"bigint"},
+      {"name":"N_QTE_CAL_count","type":"bigint"},
+      {"name":"N_QTE_DED_NRES_count","type":"bigint"},
+      {"name":"N_QTE_DED_RES_count","type":"bigint"},
+      {"name":"N_QTE_DESTOCK_VTE_12MG_count","type":"bigint"},
+      {"name":"N_QTE_RES_NDED_count","type":"bigint"},
+      {"name":"N_SIGN_ID_count","type":"bigint"},
+      {"name":"N_TAUX_RES_count","type":"bigint"},
+      {"name":"N_VAL_PAS_count","type":"bigint"},
+      {"name":"N_VAL_PAS_CHARGE_count","type":"bigint"},
+      {"name":"N_VAL_PDS_count","type":"bigint"},
+      {"name":"N_VAL_PDS_PFAS_count","type":"bigint"},
+      {"name":"N_VAL_PDS_PFAS_CHARGE_count","type":"bigint"},
+      {"name":"N_VAL_PINV_count","type":"bigint"},
+      {"name":"N_VAL_STOCK_count","type":"bigint"},
+      {"name":"N_VTES_12M_count","type":"bigint"},
+      {"name":"N_VTES_24M_count","type":"bigint"},
+      {"name":"PFAS_PROPOSE_count","type":"bigint"},
+      {"name":"PVN_MOYEN_12MG_count","type":"bigint"},
+      {"name":"PV_PROPOSE_count","type":"bigint"},
+      {"name":"VERSION_count","type":"bigint"}
+    ],
+    "userModified": false,
+    "metadata": {
+      "engineType": "DSS",
+      "pivotElementsModalities": [
+        {
+          "pivotElement": {
+            "keyColumns": [
+              "CHAMP"
+            ],
+            "valueLimit": "NO_LIMIT",
+            "topnLimit": 20,
+            "minOccLimit": 0,
+            "explicitValues": [],
+            "globalCount": true,
+            "valueColumns": []
+          },
+          "pivotedModalities": [
+            {
+              "keyValues": [
+                "ABAT_PROPOSE"
+              ],
+              "name": "ABAT_PROPOSE",
+              "valueColumns": [],
+              "globalCountColumn": "ABAT_PROPOSE_count"
+            },
+            {
+              "keyValues": [
+                "B_CLOTURE"
+              ],
+              "name": "B_CLOTURE",
+              "valueColumns": [],
+              "globalCountColumn": "B_CLOTURE_count"
+            },
+            {
+              "keyValues": [
+                "B_GERE"
+              ],
+              "name": "B_GERE",
+              "valueColumns": [],
+              "globalCountColumn": "B_GERE_count"
+            },
+            {
+              "keyValues": [
+                "B_PROP_BRADERIE"
+              ],
+              "name": "B_PROP_BRADERIE",
+              "valueColumns": [],
+              "globalCountColumn": "B_PROP_BRADERIE_count"
+            },
+            {
+              "keyValues": [
+                "B_VENDU_12MG"
+              ],
+              "name": "B_VENDU_12MG",
+              "valueColumns": [],
+              "globalCountColumn": "B_VENDU_12MG_count"
+            },
+            {
+              "keyValues": [
+                "COUT_MOYEN_12MG"
+              ],
+              "name": "COUT_MOYEN_12MG",
+              "valueColumns": [],
+              "globalCountColumn": "COUT_MOYEN_12MG_count"
+            },
+            {
+              "keyValues": [
+                "CRLO"
+              ],
+              "name": "CRLO",
+              "valueColumns": [],
+              "globalCountColumn": "CRLO_count"
+            },
+            {
+              "keyValues": [
+                "CRLO_FINAL"
+              ],
+              "name": "CRLO_FINAL",
+              "valueColumns": [],
+              "globalCountColumn": "CRLO_FINAL_count"
+            },
+            {
+              "keyValues": [
+                "C_CERE_CODE"
+              ],
+              "name": "C_CERE_CODE",
+              "valueColumns": [],
+              "globalCountColumn": "C_CERE_CODE_count"
+            },
+            {
+              "keyValues": [
+                "C_CERE_TYPE"
+              ],
+              "name": "C_CERE_TYPE",
+              "valueColumns": [],
+              "globalCountColumn": "C_CERE_TYPE_count"
+            },
+            {
+              "keyValues": [
+                "C_ID_INT"
+              ],
+              "name": "C_ID_INT",
+              "valueColumns": [],
+              "globalCountColumn": "C_ID_INT_count"
+            },
+            {
+              "keyValues": [
+                "C_INITIAL_PROD_REFREX"
+              ],
+              "name": "C_INITIAL_PROD_REFREX",
+              "valueColumns": [],
+              "globalCountColumn": "C_INITIAL_PROD_REFREX_count"
+            },
+            {
+              "keyValues": [
+                "C_QVD_FLUX"
+              ],
+              "name": "C_QVD_FLUX",
+              "valueColumns": [],
+              "globalCountColumn": "C_QVD_FLUX_count"
+            },
+            {
+              "keyValues": [
+                "C_SKU_ID"
+              ],
+              "name": "C_SKU_ID",
+              "valueColumns": [],
+              "globalCountColumn": "C_SKU_ID_count"
+            },
+            {
+              "keyValues": [
+                "C_SKU_ID_CLR"
+              ],
+              "name": "C_SKU_ID_CLR",
+              "valueColumns": [],
+              "globalCountColumn": "C_SKU_ID_CLR_count"
+            },
+            {
+              "keyValues": [
+                "C_TAUX_RES"
+              ],
+              "name": "C_TAUX_RES",
+              "valueColumns": [],
+              "globalCountColumn": "C_TAUX_RES_count"
+            },
+            {
+              "keyValues": [
+                "C_TYPEPDS"
+              ],
+              "name": "C_TYPEPDS",
+              "valueColumns": [],
+              "globalCountColumn": "C_TYPEPDS_count"
+            },
+            {
+              "keyValues": [
+                "C_TYPEPDS_SIMPLE"
+              ],
+              "name": "C_TYPEPDS_SIMPLE",
+              "valueColumns": [],
+              "globalCountColumn": "C_TYPEPDS_SIMPLE_count"
+            },
+            {
+              "keyValues": [
+                "D_DATE_FAIT"
+              ],
+              "name": "D_DATE_FAIT",
+              "valueColumns": [],
+              "globalCountColumn": "D_DATE_FAIT_count"
+            },
+            {
+              "keyValues": [
+                "FAIT_CRCO_ID"
+              ],
+              "name": "FAIT_CRCO_ID",
+              "valueColumns": [],
+              "globalCountColumn": "FAIT_CRCO_ID_count"
+            },
+            {
+              "keyValues": [
+                "N_ANNEE_MOIS"
+              ],
+              "name": "N_ANNEE_MOIS",
+              "valueColumns": [],
+              "globalCountColumn": "N_ANNEE_MOIS_count"
+            },
+            {
+              "keyValues": [
+                "N_BASE_LIGNE"
+              ],
+              "name": "N_BASE_LIGNE",
+              "valueColumns": [],
+              "globalCountColumn": "N_BASE_LIGNE_count"
+            },
+            {
+              "keyValues": [
+                "N_CERE_ID"
+              ],
+              "name": "N_CERE_ID",
+              "valueColumns": [],
+              "globalCountColumn": "N_CERE_ID_count"
+            },
+            {
+              "keyValues": [
+                "N_D3E"
+              ],
+              "name": "N_D3E",
+              "valueColumns": [],
+              "globalCountColumn": "N_D3E_count"
+            },
+            {
+              "keyValues": [
+                "N_D3E_NB"
+              ],
+              "name": "N_D3E_NB",
+              "valueColumns": [],
+              "globalCountColumn": "N_D3E_NB_count"
+            },
+            {
+              "keyValues": [
+                "N_PAS"
+              ],
+              "name": "N_PAS",
+              "valueColumns": [],
+              "globalCountColumn": "N_PAS_count"
+            },
+            {
+              "keyValues": [
+                "N_PINV"
+              ],
+              "name": "N_PINV",
+              "valueColumns": [],
+              "globalCountColumn": "N_PINV_count"
+            },
+            {
+              "keyValues": [
+                "N_QTE_CAL"
+              ],
+              "name": "N_QTE_CAL",
+              "valueColumns": [],
+              "globalCountColumn": "N_QTE_CAL_count"
+            },
+            {
+              "keyValues": [
+                "N_QTE_DED_NRES"
+              ],
+              "name": "N_QTE_DED_NRES",
+              "valueColumns": [],
+              "globalCountColumn": "N_QTE_DED_NRES_count"
+            },
+            {
+              "keyValues": [
+                "N_QTE_DED_RES"
+              ],
+              "name": "N_QTE_DED_RES",
+              "valueColumns": [],
+              "globalCountColumn": "N_QTE_DED_RES_count"
+            },
+            {
+              "keyValues": [
+                "N_QTE_DESTOCK_VTE_12MG"
+              ],
+              "name": "N_QTE_DESTOCK_VTE_12MG",
+              "valueColumns": [],
+              "globalCountColumn": "N_QTE_DESTOCK_VTE_12MG_count"
+            },
+            {
+              "keyValues": [
+                "N_QTE_RES_NDED"
+              ],
+              "name": "N_QTE_RES_NDED",
+              "valueColumns": [],
+              "globalCountColumn": "N_QTE_RES_NDED_count"
+            },
+            {
+              "keyValues": [
+                "N_SIGN_ID"
+              ],
+              "name": "N_SIGN_ID",
+              "valueColumns": [],
+              "globalCountColumn": "N_SIGN_ID_count"
+            },
+            {
+              "keyValues": [
+                "N_TAUX_RES"
+              ],
+              "name": "N_TAUX_RES",
+              "valueColumns": [],
+              "globalCountColumn": "N_TAUX_RES_count"
+            },
+            {
+              "keyValues": [
+                "N_VAL_PAS"
+              ],
+              "name": "N_VAL_PAS",
+              "valueColumns": [],
+              "globalCountColumn": "N_VAL_PAS_count"
+            },
+            {
+              "keyValues": [
+                "N_VAL_PAS_CHARGE"
+              ],
+              "name": "N_VAL_PAS_CHARGE",
+              "valueColumns": [],
+              "globalCountColumn": "N_VAL_PAS_CHARGE_count"
+            },
+            {
+              "keyValues": [
+                "N_VAL_PDS"
+              ],
+              "name": "N_VAL_PDS",
+              "valueColumns": [],
+              "globalCountColumn": "N_VAL_PDS_count"
+            },
+            {
+              "keyValues": [
+                "N_VAL_PDS_PFAS"
+              ],
+              "name": "N_VAL_PDS_PFAS",
+              "valueColumns": [],
+              "globalCountColumn": "N_VAL_PDS_PFAS_count"
+            },
+            {
+              "keyValues": [
+                "N_VAL_PDS_PFAS_CHARGE"
+              ],
+              "name": "N_VAL_PDS_PFAS_CHARGE",
+              "valueColumns": [],
+              "globalCountColumn": "N_VAL_PDS_PFAS_CHARGE_count"
+            },
+            {
+              "keyValues": [
+                "N_VAL_PINV"
+              ],
+              "name": "N_VAL_PINV",
+              "valueColumns": [],
+              "globalCountColumn": "N_VAL_PINV_count"
+            },
+            {
+              "keyValues": [
+                "N_VAL_STOCK"
+              ],
+              "name": "N_VAL_STOCK",
+              "valueColumns": [],
+              "globalCountColumn": "N_VAL_STOCK_count"
+            },
+            {
+              "keyValues": [
+                "N_VTES_12M"
+              ],
+              "name": "N_VTES_12M",
+              "valueColumns": [],
+              "globalCountColumn": "N_VTES_12M_count"
+            },
+            {
+              "keyValues": [
+                "N_VTES_24M"
+              ],
+              "name": "N_VTES_24M",
+              "valueColumns": [],
+              "globalCountColumn": "N_VTES_24M_count"
+            },
+            {
+              "keyValues": [
+                "PFAS_PROPOSE"
+              ],
+              "name": "PFAS_PROPOSE",
+              "valueColumns": [],
+              "globalCountColumn": "PFAS_PROPOSE_count"
+            },
+            {
+              "keyValues": [
+                "PVN_MOYEN_12MG"
+              ],
+              "name": "PVN_MOYEN_12MG",
+              "valueColumns": [],
+              "globalCountColumn": "PVN_MOYEN_12MG_count"
+            },
+            {
+              "keyValues": [
+                "PV_PROPOSE"
+              ],
+              "name": "PV_PROPOSE",
+              "valueColumns": [],
+              "globalCountColumn": "PV_PROPOSE_count"
+            },
+            {
+              "keyValues": [
+                "VERSION"
+              ],
+              "name": "VERSION",
+              "valueColumns": [],
+              "globalCountColumn": "VERSION_count"
+            }
+          ]
+        }
+      ]
+    }
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
