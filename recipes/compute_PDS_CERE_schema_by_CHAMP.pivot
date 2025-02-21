@@ -1,12 +1,28 @@
 {
   "schemaComputation": "ONLY_IF_NO_METADATA",
-  "identifierColumnsSelection": "EXPLICIT",
   "modalitySlugification": "NONE",
-  "sortModalities": true,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "engineType": "DSS",
+  "pivots": [
+    {
+      "valueLimit": "NO_LIMIT",
+      "minOccLimit": 0,
+      "topnLimit": 20,
+      "globalCount": true,
+      "explicitValues": [],
+      "keyColumns": [
+        "CHAMP"
+      ],
+      "valueColumns": []
+    }
+  ],
+  "computedColumns": [],
+  "enginesPreferences": {},
+  "identifierColumnsSelection": "EXPLICIT",
+  "sortModalities": true,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -34,7 +50,12 @@
       "readParams": {
         "mode": "AUTO",
         "autoModeRepartitionInto": 10,
-        "map": {}
+        "map": {
+          "PDS_CERE_schema": {
+            "cache": false,
+            "repartition": 10
+          }
+        }
       },
       "overwriteOutputSchema": false,
       "executionEngine": "SPARK_SUBMIT",
@@ -46,18 +67,5 @@
   },
   "explicitIdentifiers": [],
   "otherColumns": [],
-  "pivots": [
-    {
-      "minOccLimit": 0,
-      "topnLimit": 0,
-      "globalCount": true,
-      "explicitValues": [],
-      "keyColumns": [
-        "CHAMP"
-      ],
-      "valueColumns": []
-    }
-  ],
-  "computedColumns": [],
   "customAggregates": []
 }
