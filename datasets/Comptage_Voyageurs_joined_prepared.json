@@ -80,6 +80,7 @@
       {"name":"Longueur de la voie (km)","type":"string"},
       {"name":"Nombre de trains par jour","type":"string"},
       {"name":"Nombre de voyageurs par jour","type":"string"},
+      {"name":"pourcentage par tranche","type":"double"},
       {"name":"Nombre de gares","type":"string"},
       {"name":"Nombre de départements traversés","type":"string"},
       {"name":"Blog","type":"string"}
