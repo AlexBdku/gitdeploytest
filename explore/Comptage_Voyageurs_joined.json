@@ -179,8 +179,8 @@
           "column": "Date de mise en service",
           "params": {
             "type": "LongMeaning",
-            "ok": true,
-            "nok": true,
+            "ok": false,
+            "nok": false,
             "empty": true
           }
         }
