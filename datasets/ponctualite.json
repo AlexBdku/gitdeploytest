@@ -88,8 +88,8 @@
       {"name":"Service","type":"string"},
       {"name":"Ligne","type":"string"},
       {"name":"Nom de la ligne","type":"string"},
-      {"name":"Taux de ponctualité","type":"string"},
-      {"name":"Nombre de voyageurs à l\u0027heure pour un voyageur en retard","type":"string"}
+      {"name":"Taux de ponctualité","type":"double"},
+      {"name":"Nombre de voyageurs à l\u0027heure pour un voyageur en retard","type":"double"}
     ],
     "userModified": true
   },
