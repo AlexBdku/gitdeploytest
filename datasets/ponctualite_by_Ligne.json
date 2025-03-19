@@ -68,6 +68,8 @@
   "schema": {
     "columns": [
       {"name":"Ligne","type":"string"},
+      {"name":"Taux de ponctualité_avg","type":"double"},
+      {"name":"Nombre de voyageurs à l\u0027heure pour un voyageur en retard_avg","type":"double"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
