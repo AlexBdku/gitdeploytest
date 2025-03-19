@@ -66,7 +66,16 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"Ligne","type":"string"},
+      {"name":"Date de mise en service","type":"string"},
+      {"name":"Longueur de la voie (km)","type":"string"},
+      {"name":"Nombre de trains par jour","type":"string"},
+      {"name":"Nombre de voyageurs par jour","type":"string"},
+      {"name":"Nombre de gares","type":"string"},
+      {"name":"Nombre de départements traversés","type":"string"},
+      {"name":"Blog","type":"string"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
