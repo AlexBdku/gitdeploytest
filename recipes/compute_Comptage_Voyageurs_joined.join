@@ -6,72 +6,108 @@
       "conditionsMode": "AND",
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "Ligne",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "Ligne",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "Nom Gare",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Code Gare",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Type jour",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Date",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Annee",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Ligne",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Axe",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Tranche horaire",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Somme de Montants",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Date de mise en service",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Longueur de la voie (km)",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Nombre de trains par jour",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Nombre de voyageurs par jour",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Nombre de gares",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Nombre de départements traversés",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Blog",
+      "type": "string",
       "table": 1
     }
   ],
@@ -135,5 +171,79 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Nom Gare",
+            "type": "string"
+          },
+          {
+            "name": "Code Gare",
+            "type": "string"
+          },
+          {
+            "name": "Type jour",
+            "type": "string"
+          },
+          {
+            "name": "Date",
+            "type": "string"
+          },
+          {
+            "name": "Annee",
+            "type": "string"
+          },
+          {
+            "name": "Ligne",
+            "type": "string"
+          },
+          {
+            "name": "Axe",
+            "type": "string"
+          },
+          {
+            "name": "Tranche horaire",
+            "type": "string"
+          },
+          {
+            "name": "Somme de Montants",
+            "type": "string"
+          },
+          {
+            "name": "Date de mise en service",
+            "type": "string"
+          },
+          {
+            "name": "Longueur de la voie (km)",
+            "type": "string"
+          },
+          {
+            "name": "Nombre de trains par jour",
+            "type": "string"
+          },
+          {
+            "name": "Nombre de voyageurs par jour",
+            "type": "string"
+          },
+          {
+            "name": "Nombre de gares",
+            "type": "string"
+          },
+          {
+            "name": "Nombre de départements traversés",
+            "type": "string"
+          },
+          {
+            "name": "Blog",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
