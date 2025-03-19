@@ -119,7 +119,7 @@
       "first": false
     }
   ],
-  "globalCount": true,
+  "globalCount": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -175,10 +175,6 @@
           {
             "name": "Nombre de voyageurs à l\u0027heure pour un voyageur en retard_avg",
             "type": "double"
-          },
-          {
-            "name": "count",
-            "type": "bigint"
           }
         ],
         "userModified": false
