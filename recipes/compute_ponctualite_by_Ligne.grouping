@@ -5,7 +5,19 @@
   },
   "keys": [
     {
-      "column": "Ligne"
+      "last": false,
+      "max": false,
+      "column": "Ligne",
+      "count": false,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "median": false,
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,8 +27,10 @@
       "firstLastNotNull": false,
       "column": "Date",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -32,8 +46,10 @@
       "firstLastNotNull": false,
       "column": "Service",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -49,8 +65,10 @@
       "firstLastNotNull": false,
       "column": "Nom de la ligne",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -66,14 +84,17 @@
       "firstLastNotNull": false,
       "column": "Taux de ponctualité",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -83,14 +104,17 @@
       "firstLastNotNull": false,
       "column": "Nombre de voyageurs à l\u0027heure pour un voyageur en retard",
       "count": false,
+      "$idx": 4,
       "sum": false,
       "concat": false,
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
@@ -134,8 +158,32 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Ligne",
+            "type": "string"
+          },
+          {
+            "name": "Taux de ponctualité_avg",
+            "type": "double"
+          },
+          {
+            "name": "Nombre de voyageurs à l\u0027heure pour un voyageur en retard_avg",
+            "type": "double"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
