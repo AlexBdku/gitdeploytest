@@ -71,7 +71,8 @@
       {"name":"latitude","type":"double"},
       {"name":"longitude","type":"double"},
       {"name":"Somme de Montants_sum","type":"bigint"},
-      {"name":"count","type":"bigint"}
+      {"name":"count","type":"bigint"},
+      {"name":"gare_geopoint","type":"string"}
     ],
     "userModified": true
   },
