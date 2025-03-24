@@ -70,7 +70,7 @@
         "mode": "PRESET",
         "name": "Creds"
       },
-      "endpoint_url": "https://api.sncf.com/v1/coverage/sncf/commercial_modes"
+      "endpoint_url": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/commercial_mode:TN"
     },
     "notReadyIfEmpty": false,
     "previewAllPartitions": false
