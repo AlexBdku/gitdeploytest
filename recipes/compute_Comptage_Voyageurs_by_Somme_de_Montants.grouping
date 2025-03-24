@@ -5,7 +5,24 @@
   },
   "keys": [
     {
-      "column": "Somme de Montants"
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "Nom Gare",
+      "count": false,
+      "$idx": 0,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "median": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -13,27 +30,12 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "Nom Gare",
-      "count": false,
-      "sum": false,
-      "concat": false,
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
-      "countDistinct": false,
-      "avg": false,
-      "median": false,
-      "stddev": false,
-      "first": false
-    },
-    {
-      "last": false,
-      "max": false,
-      "firstLastNotNull": false,
       "column": "Code Gare",
       "count": false,
+      "$idx": 0,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -49,8 +51,10 @@
       "firstLastNotNull": false,
       "column": "Type jour",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -66,8 +70,10 @@
       "firstLastNotNull": false,
       "column": "Date",
       "count": false,
+      "$idx": 2,
       "sum": false,
       "concat": false,
+      "type": "dateonly",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -83,8 +89,10 @@
       "firstLastNotNull": false,
       "column": "Annee",
       "count": false,
+      "$idx": 3,
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -100,8 +108,10 @@
       "firstLastNotNull": false,
       "column": "Ligne",
       "count": false,
+      "$idx": 4,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -117,8 +127,10 @@
       "firstLastNotNull": false,
       "column": "Axe",
       "count": false,
+      "$idx": 5,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
@@ -134,14 +146,33 @@
       "firstLastNotNull": false,
       "column": "Tranche horaire",
       "count": false,
+      "$idx": 6,
       "sum": false,
       "concat": false,
+      "type": "string",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
       "median": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "column": "Somme de Montants",
+      "count": false,
+      "$idx": 7,
+      "sum": true,
+      "concat": false,
+      "type": "bigint",
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
@@ -185,8 +216,28 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Nom Gare",
+            "type": "string"
+          },
+          {
+            "name": "Somme de Montants_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
