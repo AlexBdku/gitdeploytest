@@ -66,8 +66,14 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"Nom Gare","type":"string"},
+      {"name":"latitude","type":"double"},
+      {"name":"longitude","type":"double"},
+      {"name":"Somme de Montants_sum","type":"bigint"},
+      {"name":"count","type":"bigint"}
+    ],
+    "userModified": false
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
