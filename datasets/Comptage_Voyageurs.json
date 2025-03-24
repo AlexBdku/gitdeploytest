@@ -85,14 +85,14 @@
   "schema": {
     "columns": [
       {"name":"Nom Gare","type":"string"},
-      {"name":"Code Gare","type":"string"},
+      {"name":"Code Gare","type":"bigint"},
       {"name":"Type jour","type":"string"},
-      {"name":"Date","type":"string"},
-      {"name":"Annee","type":"string"},
+      {"name":"Date","type":"dateonly"},
+      {"name":"Annee","type":"bigint"},
       {"name":"Ligne","type":"string"},
       {"name":"Axe","type":"string"},
       {"name":"Tranche horaire","type":"string"},
-      {"name":"Somme de Montants","type":"string"}
+      {"name":"Somme de Montants","type":"bigint"}
     ],
     "userModified": true
   },
