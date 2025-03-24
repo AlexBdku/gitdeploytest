@@ -67,7 +67,8 @@
   },
   "schema": {
     "columns": [
-      {"name":"Somme de Montants","type":"string"},
+      {"name":"Nom Gare","type":"string"},
+      {"name":"Somme de Montants_sum","type":"bigint"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
