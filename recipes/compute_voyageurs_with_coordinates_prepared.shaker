@@ -1,6 +1,32 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "Nom Gare"
+      },
+      {
+        "d": true,
+        "name": "latitude"
+      },
+      {
+        "d": true,
+        "name": "longitude"
+      },
+      {
+        "d": true,
+        "name": "Somme de Montants_sum"
+      },
+      {
+        "d": true,
+        "name": "count"
+      },
+      {
+        "d": true,
+        "name": "gare_geopoint"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +56,24 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "gare_geopoint",
+        "lat_column": "latitude",
+        "lon_column": "longitude"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -58,7 +100,14 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Nom Gare": 225,
+    "gare_geopoint": 300,
+    "latitude": 148,
+    "Somme de Montants_sum": 173,
+    "count": 100,
+    "longitude": 148
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
