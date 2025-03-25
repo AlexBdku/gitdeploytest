@@ -101,10 +101,6 @@
           {
             "name": "DEPARTEMENT",
             "type": "string"
-          },
-          {
-            "name": "original_dataset",
-            "type": "string"
           }
         ],
         "userModified": false
@@ -114,5 +110,5 @@
     "enabled": false
   },
   "selectedColumnsIndexes": [],
-  "addOriginColumn": true
+  "addOriginColumn": false
 }
