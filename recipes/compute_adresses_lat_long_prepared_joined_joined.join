@@ -196,7 +196,7 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "adresses_lat_long_prepared_joined_prepared_topn",
+      "originLabel": "adresses_lat_long_prepared_joined_prepared",
       "index": 1,
       "computedColumns": []
     },
