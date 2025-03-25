@@ -74,7 +74,7 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "grouped_columns",
+        "type": "geom_map",
         "variant": "normal",
         "name": "New chart",
         "userEditedName": false,
@@ -101,7 +101,18 @@
         "geometry": [],
         "geoLayers": [
           {
-            "geometry": [],
+            "geometry": [
+              {
+                "treatAsAlphanum": false,
+                "isA": "ua",
+                "adminLevel": 0,
+                "multiplier": "Auto",
+                "useParenthesesForNegativeValues": false,
+                "shouldFormatInPercentage": false,
+                "column": "Geo Shape",
+                "type": "GEOMETRY"
+              }
+            ],
             "colorOptions": {
               "ccScaleMode": "NORMAL",
               "paletteType": "CONTINUOUS",
@@ -123,11 +134,36 @@
               "customColors": {}
             },
             "uaColor": []
+          },
+          {
+            "geometry": [],
+            "colorOptions": {
+              "ccScaleMode": "NORMAL",
+              "paletteType": "CONTINUOUS",
+              "quantizationMode": "NONE",
+              "numQuantizeSteps": 5,
+              "paletteMiddleValue": 0.0,
+              "heatDensityMapIntensity": 0.5,
+              "heatDensityMapRadius": 0.5,
+              "singleColor": "#aec7e8",
+              "transparency": 0.75,
+              "colorPalette": "default",
+              "customPalette": {
+                "id": "__dku_custom__",
+                "name": "Custom Palette",
+                "colors": [],
+                "values": [],
+                "fixedValues": false
+              },
+              "customColors": {}
+            },
+            "uaColor": []
           }
         ],
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
+        "filters": [],
         "xAxisFormatting": {
           "displayAxis": true,
           "showAxisTitle": true,
@@ -320,6 +356,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -468,6 +505,7 @@
           },
           "displayPointer": false
         },
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAatJREFUeF7tlSFuAlEYBv+3SRNERVE9ACFNanEVFZg6llP0CqysfByBW9A6VF1vUNFdh6ouhhCSbZAkcIF5824wM/+Xl8KHNpDQdMKFgeFHYGADww3A8VywgeEG4Hgu2MBwA3A8F2xguAE4ngs2MNwAHM8FGxhuAI7ngg0MNwDHc8EGhhuA47lgA8MNwPFcsIHhBuB4LtjALAMPzcfiJ8+WLKrrNEUteNysN1VU0z76bZvrUQmRywq8eD+mFFX0cWiX9cDAMAOPb5+3x/3fNiLdtXlWwfAu4hS14Mnr6mY3vP+NlL7bXD8bGGhg3Ky/ujx/Ov3HXZ6/ABHPkIpaMD3mJT4Dw6sb2MBwA3A8F2xguAE4ngs2MNwAHM8FGxhuAI7ngg0MNwDHc8EGhhuA47lgA8MNwPFcsIHhBuB4LtjAcANwPBdsYLgBOJ4LNjDcABzPBRsYbgCO54INDDcAx3PBBoYbgOO5YAPDDcDxXLCB4QbgeC7YwHADcDwXbGC4ATieCzYw3AAczwUbGG4AjueCDQw3AMdzwQaGG4DjuWADww3A8VywgeEG4Hj/uA0mUWpsYykAAAAASUVORK5CYII\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
@@ -548,7 +586,9 @@
           },
           "horizontal": {
             "show": false,
-            "displayAxis": {},
+            "displayAxis": {
+              "type": "LEFT_Y_AXIS"
+            },
             "lineFormatting": {
               "type": "FILLED",
               "color": "#d9d9d9",
