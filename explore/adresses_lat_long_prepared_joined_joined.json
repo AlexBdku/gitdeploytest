@@ -14,6 +14,10 @@
           "d": true
         },
         {
+          "name": "CODE_UIC",
+          "d": true
+        },
+        {
           "name": "LIBELLE",
           "d": true
         },
@@ -120,6 +124,94 @@
         {
           "name": "lignes_Geo Shape",
           "d": true
+        },
+        {
+          "name": "Nom de la gare",
+          "d": true
+        },
+        {
+          "name": "Code UIC",
+          "d": true
+        },
+        {
+          "name": "Code postal",
+          "d": true
+        },
+        {
+          "name": "Segmentation DRG",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs 2023",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs + Non voyageurs 2023",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs 2022",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs + Non voyageurs 2022",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs 2021",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs + Non voyageurs 2021",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs 2020",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs + Non voyageurs 2020",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs 2019",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs + Non voyageurs 2019",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs 2018",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs + Non voyageurs 2018",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs 2017",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs + Non voyageurs 2017",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs 2016",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs + Non voyageurs 2016",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs 2015",
+          "d": true
+        },
+        {
+          "name": "Total Voyageurs + Non voyageurs 2015",
+          "d": true
         }
       ]
     },
@@ -157,7 +249,29 @@
       "lignes_C_GEO_F": 300,
       "lignes_Geo Point": 295,
       "lignes_Geo Shape": 300,
-      "distance": 148
+      "distance": 148,
+      "Nom de la gare": 197,
+      "Code UIC": 100,
+      "Code postal": 100,
+      "Segmentation DRG": 135,
+      "Total Voyageurs 2023": 165,
+      "Total Voyageurs + Non voyageurs 2023": 285,
+      "Total Voyageurs 2022": 165,
+      "Total Voyageurs + Non voyageurs 2022": 285,
+      "Total Voyageurs 2021": 165,
+      "Total Voyageurs + Non voyageurs 2021": 285,
+      "Total Voyageurs 2020": 165,
+      "Total Voyageurs + Non voyageurs 2020": 285,
+      "Total Voyageurs 2019": 165,
+      "Total Voyageurs + Non voyageurs 2019": 285,
+      "Total Voyageurs 2018": 165,
+      "Total Voyageurs + Non voyageurs 2018": 285,
+      "Total Voyageurs 2017": 165,
+      "Total Voyageurs + Non voyageurs 2017": 285,
+      "Total Voyageurs 2016": 165,
+      "Total Voyageurs + Non voyageurs 2016": 285,
+      "Total Voyageurs 2015": 165,
+      "Total Voyageurs + Non voyageurs 2015": 285
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -220,43 +334,7 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [
-      {
-        "column": "lignes_REGION",
-        "type": "columnFilter",
-        "currentMode": "FACET",
-        "active": true,
-        "facet": {
-          "type": "facet",
-          "column": "lignes_REGION",
-          "columnType": "ALPHANUM",
-          "currentMode": "ALPHANUM",
-          "sort": "count",
-          "selectedValues": {
-            "Provence-Alpes-Côte-d\u0027Azur": true
-          }
-        },
-        "alphanumFilter": {
-          "type": "alphanum",
-          "column": "lignes_REGION",
-          "selectedValues": [],
-          "params": {
-            "mode": "full_string",
-            "normalization": "exact"
-          }
-        },
-        "validityFilter": {
-          "type": "validity",
-          "column": "lignes_REGION",
-          "params": {
-            "type": "Text",
-            "ok": true,
-            "nok": true,
-            "empty": true
-          }
-        }
-      }
-    ],
+    "explorationFilters": [],
     "previewMode": "ALL_ROWS"
   },
   "charts": [
@@ -752,7 +830,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAzRJREFUeF7t2U9I03EYBvD9JENPUURRSCoeNrXsEtEfEYo6uBVYUNClQ65MkyCasxGUdZkuIwjLrHnpEhSUl61DlBBaEZ0scxKhSBRFFEFlILQYdSm21PF74f0+38eT6G8v7/N89g5Bx8Mv6AYc6HQM5yEw+JuAwAQGbwA8Hi+YwOANgMfjBRMYvAHweLxgAoM3AB6PF0xg8AbA4/GCCQzeAHg8XjCBwRsAj8cLJjB4A+DxeMEEBm8APB4vmMDmN5A+teigc/bLNfOTzD+BFRfcc+jBh9arW5fNvx7zX2EFsPlM+SeAA55qu19RUFDYV9JVty3/WnBeCQeMQ+NOEljgt5GHDSujdQPu1GTuFFjgDElpe7J+ofMz+apzB3TO/7394IOfPxZPH78QhM+ZC9mo4EP9l721jS3jmTCP+i/t39R45HquYOl77Z+d7V2LPR2DC1Z9/3pyKrbzjLkftPlvbhTwvzGH4j2jtcHW6j8/d24/ed+xe8Py09nq+JEc+VTkr1mSf1VmvtJo4GyV33n8rn7XxhV3cyA/K/LXrDOTKr+t4YBnq2E6OTJT7K8pnO05lN/DAqcHIz5nSzSVDWo68TxeHFgTREG0+q9oGxAJbLEy7Ee0xaZ/RYcDHvVWvqweH6si8O8G4IDHfL6yylRqksCgwHOB7d4buBG6mdg3l2dNfwbugk0HcXt/ArvdqLJ5BFYG4vY6UMDDAy/ebG5YXeJ2SSbPgwI2GUJqdyuBu/cEZkK3Elb8w8FK4N6Jc0+by9vWS12NprlWAmsCkN7FSuDe17ETzRXhTulyNcy3EjhTfN9ELNpUHo5kvr8yGbt4uCx8VAOI2ztYC5wpsmX4wLe1S6tKm7yhj24Xq2We1cBaECT3ILBkuwpmE1gBguQKBJZsV8FsAitAkFyBwJLtKphNYAUIkisQWLJdBbMJrABBcgUCS7arYDaBFSBIrkBgyXYVzCawAgTJFQgs2a6C2QRWgCC5AoEl21Uwm8AKECRXILBkuwpmE1gBguQKBJZsV8FsAitAkFyBwJLtKphNYAUIkisQWLJdBbMJrABBcgUCS7arYDaBFSBIrkBgyXYVzP4FINR0Ub/YmSMAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAVJJREFUeF7t1LERQVEUBuH3RHrRhVADMo2INSLTgFAXehEZM2Yo4jt7O9jd89916dEGVpouuKXA+BEUuMC4ARyvBRcYN4DjteAC4wZwvBZcYNwAjteCC4wbwPFacIFxAzheCy4wbgDHa8EFxg3geC24wLgBHK8FFxg3gOO14ALjBnC8Flxg3ACON27B19vjfTruN3jXP964wFPC/jgLjBcfGfj+vLwOu/MWb/vFGxl4Qti+6CGVWzAeusAFxg3geC24wLgBHK8FFxg3gOO14ALjBnC8Flxg3ACO14ILjBvA8VpwgXEDOF4LLjBuAMdrwQXGDeB4LbjAuAEcrwUXGDeA47XgAuMGcLwWXGDcAI7XgguMG8DxWnCBcQM4XgsuMG4Ax2vBBcYN4HgtuMC4ARyvBRcYN4DjteAC4wZwvBZcYNwAjteCC4wbwPFacIFxAzjeB/x+CFEEMNG4AAAAAElFTkSuQmCC",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
