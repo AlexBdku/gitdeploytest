@@ -19,6 +19,10 @@
         {
           "ref": "adresses_lat_long_prepared_joined_prepared",
           "deps": []
+        },
+        {
+          "ref": "frequentation_gare",
+          "deps": []
         }
       ]
     }

@@ -27,6 +27,28 @@
           "windowTo": 0
         }
       ]
+    },
+    {
+      "table2": 2,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "rightLimit": {},
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "CODE_UIC",
+            "table": 0
+          },
+          "dateDiffUnit": "SECOND",
+          "column2": {
+            "name": "Code UIC",
+            "table": 2
+          },
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
@@ -149,6 +171,116 @@
       "name": "C_GEO_F",
       "type": "string",
       "table": 1
+    },
+    {
+      "name": "Nom de la gare",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Code UIC",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Code postal",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Segmentation DRG",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs 2023",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs + Non voyageurs 2023",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs 2022",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs + Non voyageurs 2022",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs 2021",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs + Non voyageurs 2021",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs 2020",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs + Non voyageurs 2020",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs 2019",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs + Non voyageurs 2019",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs 2018",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs + Non voyageurs 2018",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs 2017",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs + Non voyageurs 2017",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs 2016",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs + Non voyageurs 2016",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs 2015",
+      "type": "string",
+      "table": 2
+    },
+    {
+      "name": "Total Voyageurs + Non voyageurs 2015",
+      "type": "string",
+      "table": 2
     }
   ],
   "resolvedSelectedColumns": [],
@@ -210,6 +342,11 @@
       "originLabel": "lignes_par_regions",
       "index": 0,
       "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {},
+      "index": 2
     }
   ],
   "postFilter": {
@@ -224,6 +361,10 @@
           {
             "name": "geopoint",
             "type": "geopoint"
+          },
+          {
+            "name": "CODE_UIC",
+            "type": "bigint"
           },
           {
             "name": "LIBELLE",
@@ -348,5 +489,5 @@
     "enabled": false
   },
   "computedColumns": [],
-  "enableAutoCastInJoinConditions": false
+  "enableAutoCastInJoinConditions": true
 }
