@@ -1,4 +1,19 @@
 {
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "$latestOperator": "\u0026\u0026",
+    "$filterOptions": "rules",
+    "conditions": [
+      {
+        "input": "lignes_REGION",
+        "col": "geopoint",
+        "string": "Provence",
+        "$showList": false,
+        "operator": "contains"
+      }
+    ]
+  },
+  "$status": {},
   "distinct": false,
-  "enabled": false
+  "enabled": true
 }
