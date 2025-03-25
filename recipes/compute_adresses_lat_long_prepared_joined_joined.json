@@ -13,7 +13,7 @@
     "main": {
       "items": [
         {
-          "ref": "adresses_lat_long_prepared_joined",
+          "ref": "adresses_lat_long_prepared_joined_prepared",
           "deps": []
         },
         {
