@@ -70,6 +70,8 @@
       {"name":"CODE_LIGNE","type":"string"},
       {"name":"Geoshape_regions","type":"string"},
       {"name":"Geoshape_gare","type":"string"},
+      {"name":"Geopoint_regions","type":"string"},
+      {"name":"Geopoint_gare","type":"string"},
       {"name":"REGIONS","type":"string"},
       {"name":"COMMUNE","type":"string"}
     ],
