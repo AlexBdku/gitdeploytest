@@ -77,7 +77,7 @@
               "col": "LIBELLE",
               "string": "O",
               "$showList": false,
-              "operator": "contains"
+              "operator": "contains [string]i"
             }
           ]
         },
