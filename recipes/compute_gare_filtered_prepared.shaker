@@ -12,23 +12,11 @@
       },
       {
         "d": true,
-        "name": "FRET"
-      },
-      {
-        "d": true,
-        "name": "VOYAGEURS"
-      },
-      {
-        "d": true,
         "name": "CODE_LIGNE"
       },
       {
         "d": true,
         "name": "RG_TRONCON"
-      },
-      {
-        "d": true,
-        "name": "PK"
       },
       {
         "d": true,
@@ -44,39 +32,7 @@
       },
       {
         "d": true,
-        "name": "IDGAIA"
-      },
-      {
-        "d": true,
-        "name": "X_L93"
-      },
-      {
-        "d": true,
-        "name": "Y_L93"
-      },
-      {
-        "d": true,
-        "name": "X_WGS84"
-      },
-      {
-        "d": true,
-        "name": "Y_WGS84"
-      },
-      {
-        "d": true,
-        "name": "C_GEO"
-      },
-      {
-        "d": true,
         "name": "Geo Point"
-      },
-      {
-        "d": true,
-        "name": "Geo Point_0"
-      },
-      {
-        "d": true,
-        "name": "Geo Point_1"
       },
       {
         "d": true,
@@ -139,7 +95,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "GeoPointCreator",
@@ -147,6 +103,30 @@
         "out_column": "Geo Point",
         "lat_column": "Geo Point_0",
         "lon_column": "Geo Point_1"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "C_GEO",
+          "Y_WGS84",
+          "X_WGS84",
+          "Y_L93",
+          "X_L93",
+          "IDGAIA",
+          "PK",
+          "VOYAGEURS",
+          "FRET",
+          "Geo Point_1",
+          "Geo Point_0"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }
