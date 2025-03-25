@@ -68,15 +68,10 @@
   "schema": {
     "columns": [
       {"name":"CODE_LIGNE","type":"string"},
-      {"name":"LIB_LIGNE","type":"string"},
-      {"name":"REGION","type":"string"},
-      {"name":"RG_TRONCON","type":"string"},
-      {"name":"IDGAIA","type":"string"},
-      {"name":"Geo Point","type":"string"},
-      {"name":"Geo Shape","type":"string"},
-      {"name":"LIBELLE","type":"string"},
-      {"name":"COMMUNE","type":"string"},
-      {"name":"DEPARTEMEN","type":"string"},
+      {"name":"Geoshape_regions","type":"string"},
+      {"name":"Geoshape_gare","type":"string"},
+      {"name":"REGIONS","type":"string"},
+      {"name":"DEPARTEMENT","type":"string"},
       {"name":"original_dataset","type":"string"}
     ],
     "userModified": true
