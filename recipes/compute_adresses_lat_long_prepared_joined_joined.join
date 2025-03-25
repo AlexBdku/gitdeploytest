@@ -32,114 +32,122 @@
   "selectedColumns": [
     {
       "name": "adresses",
-      "table": 0
-    },
-    {
-      "name": "latitude",
-      "table": 0
-    },
-    {
-      "name": "longitude",
+      "type": "string",
       "table": 0
     },
     {
       "name": "geopoint",
-      "table": 0
-    },
-    {
-      "name": "CODE_UIC",
+      "type": "geopoint",
       "table": 0
     },
     {
       "name": "LIBELLE",
+      "type": "string",
       "table": 0
     },
     {
       "name": "CODE_LIGNE",
-      "table": 0
-    },
-    {
-      "name": "RG_TRONCON",
+      "type": "string",
       "table": 0
     },
     {
       "name": "COMMUNE",
+      "type": "string",
       "table": 0
     },
     {
       "name": "DEPARTEMEN",
+      "type": "string",
       "table": 0
     },
     {
       "name": "IDRESEAU",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Geo Point",
+      "type": "geopoint",
       "table": 0
     },
     {
       "name": "Geo Shape",
+      "type": "string",
       "table": 0
     },
     {
       "name": "LIB_LIGNE",
+      "type": "string",
       "table": 1
     },
     {
       "name": "REGION",
+      "type": "string",
       "table": 1
     },
     {
       "name": "PKD",
+      "type": "string",
       "table": 1
     },
     {
       "name": "PKF",
+      "type": "string",
       "table": 1
     },
     {
       "name": "IDGAIA",
+      "type": "string",
       "table": 1
     },
     {
       "name": "X_D_L93",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Y_D_L93",
+      "type": "string",
       "table": 1
     },
     {
       "name": "X_F_L93",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Y_F_L93",
+      "type": "string",
       "table": 1
     },
     {
       "name": "X_D_WGS84",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Y_D_WGS84",
+      "type": "string",
       "table": 1
     },
     {
       "name": "X_F_WGS84",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Y_F_WGS84",
+      "type": "string",
       "table": 1
     },
     {
       "name": "C_GEO_D",
+      "type": "string",
       "table": 1
     },
     {
       "name": "C_GEO_F",
+      "type": "string",
       "table": 1
     }
   ],
@@ -188,8 +196,8 @@
         "distinct": false,
         "enabled": false
       },
-      "originLabel": "adresses_lat_long_prepared_joined",
-      "index": 0,
+      "originLabel": "adresses_lat_long_prepared_joined_prepared_topn",
+      "index": 1,
       "computedColumns": []
     },
     {
@@ -200,11 +208,142 @@
       },
       "prefix": "lignes",
       "originLabel": "lignes_par_regions",
-      "index": 1,
+      "index": 0,
       "computedColumns": []
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "adresses",
+            "type": "string",
+            "maxLength": 16777216
+          },
+          {
+            "name": "geopoint",
+            "type": "geopoint"
+          },
+          {
+            "name": "LIBELLE",
+            "type": "string",
+            "maxLength": 16777216
+          },
+          {
+            "name": "CODE_LIGNE",
+            "type": "string",
+            "maxLength": 16777216
+          },
+          {
+            "name": "COMMUNE",
+            "type": "string",
+            "maxLength": 16777216
+          },
+          {
+            "name": "DEPARTEMEN",
+            "type": "string",
+            "maxLength": 16777216
+          },
+          {
+            "name": "IDRESEAU",
+            "type": "string",
+            "maxLength": 16777216
+          },
+          {
+            "name": "Geo Point",
+            "type": "geopoint",
+            "maxLength": 16777216
+          },
+          {
+            "name": "distance",
+            "type": "double"
+          },
+          {
+            "name": "Geo Shape",
+            "type": "string",
+            "maxLength": 16777216
+          },
+          {
+            "name": "lignes_CODE_LIGNE",
+            "type": "string"
+          },
+          {
+            "name": "lignes_LIB_LIGNE",
+            "type": "string"
+          },
+          {
+            "name": "lignes_REGION",
+            "type": "string"
+          },
+          {
+            "name": "lignes_RG_TRONCON",
+            "type": "string"
+          },
+          {
+            "name": "lignes_PKD",
+            "type": "string"
+          },
+          {
+            "name": "lignes_PKF",
+            "type": "string"
+          },
+          {
+            "name": "lignes_IDGAIA",
+            "type": "string"
+          },
+          {
+            "name": "lignes_X_D_L93",
+            "type": "string"
+          },
+          {
+            "name": "lignes_Y_D_L93",
+            "type": "string"
+          },
+          {
+            "name": "lignes_X_F_L93",
+            "type": "string"
+          },
+          {
+            "name": "lignes_Y_F_L93",
+            "type": "string"
+          },
+          {
+            "name": "lignes_X_D_WGS84",
+            "type": "string"
+          },
+          {
+            "name": "lignes_Y_D_WGS84",
+            "type": "string"
+          },
+          {
+            "name": "lignes_X_F_WGS84",
+            "type": "string"
+          },
+          {
+            "name": "lignes_Y_F_WGS84",
+            "type": "string"
+          },
+          {
+            "name": "lignes_C_GEO_D",
+            "type": "string"
+          },
+          {
+            "name": "lignes_C_GEO_F",
+            "type": "string"
+          },
+          {
+            "name": "lignes_Geo Point",
+            "type": "string"
+          },
+          {
+            "name": "lignes_Geo Shape",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
