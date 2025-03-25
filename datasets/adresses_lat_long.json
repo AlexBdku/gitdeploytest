@@ -66,8 +66,12 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"adresses","type":"string"},
+      {"name":"latitude","type":"double"},
+      {"name":"longitude","type":"double"}
+    ],
+    "userModified": false
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
