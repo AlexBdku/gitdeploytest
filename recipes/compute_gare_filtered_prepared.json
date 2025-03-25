@@ -2,12 +2,17 @@
   "type": "shaker",
   "neverRecomputeExistingPartitions": false,
   "params": {
+    "engineType": "DSS",
     "engineParams": {
       "spark": {
         "readParams": {
           "mode": "AUTO",
           "autoModeRepartitionInto": 10,
-          "map": {}
+          "map": {
+            "gare_filtered": {
+              "repartition": 10
+            }
+          }
         },
         "useGlobalMetastore": false,
         "useNativeProcessors": true,
