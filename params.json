@@ -159,7 +159,7 @@
     },
     "dkuProperties": []
   },
-  "name": "[TRAINING] - Train station analysis",
+  "name": "[TRAINING] - Train Journey Analysis",
   "projectStatus": "Sandbox",
   "imgPattern": 8,
   "metrics": {
