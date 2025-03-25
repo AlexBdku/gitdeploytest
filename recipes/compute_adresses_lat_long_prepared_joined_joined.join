@@ -480,6 +480,94 @@
           {
             "name": "lignes_Geo Shape",
             "type": "string"
+          },
+          {
+            "name": "Nom de la gare",
+            "type": "string"
+          },
+          {
+            "name": "Code UIC",
+            "type": "string"
+          },
+          {
+            "name": "Code postal",
+            "type": "string"
+          },
+          {
+            "name": "Segmentation DRG",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs 2023",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs + Non voyageurs 2023",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs 2022",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs + Non voyageurs 2022",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs 2021",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs + Non voyageurs 2021",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs 2020",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs + Non voyageurs 2020",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs 2019",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs + Non voyageurs 2019",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs 2018",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs + Non voyageurs 2018",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs 2017",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs + Non voyageurs 2017",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs 2016",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs + Non voyageurs 2016",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs 2015",
+            "type": "string"
+          },
+          {
+            "name": "Total Voyageurs + Non voyageurs 2015",
+            "type": "string"
           }
         ],
         "userModified": false
