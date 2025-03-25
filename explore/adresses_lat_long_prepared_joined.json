@@ -356,6 +356,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -504,7 +505,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAV1JREFUeF7t01FVwwAQBdEWLwU3BDUECQQ1Td2UeoH+9RyQcHfWwbzZOR46eoEjTRfcIcH4EyQ4wfgCOF4FJxhfAMer4ATjC+B4FZxgfAEcr4ITjC+A41VwgvEFcLwKTjC+AI5XwQnGF8DxKjjB+AI4XgUnGF8Ax6vgBOML4HjjCj6t+89tW55wrw+8cYKfP/bf789lDPcY0CnF/uccKfhlPV+u29vrBOkjBZ/W/f22LV8JnrAAzjiyYNzpH7wE47YTnGB8ARyvghOML4DjVXCC8QVwvApOML4AjlfBCcYXwPEqOMH4AjheBScYXwDHq+AE4wvgeBWcYHwBHK+CE4wvgONVcILxBXC8Ck4wvgCOV8EJxhfA8So4wfgCOF4FJxhfAMer4ATjC+B4FZxgfAEcr4ITjC+A41VwgvEFcLwKTjC+AI5XwQnGF8DxKjjB+AI4XgUnGF8Ax6tgXPAdpUYQUeBfGTcAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAUdJREFUeF7t01ENwkAUBdEWL9WzcggKSOWsnnppSEj4xMDZeQ5m5t1962gDO00X3FZg/AkKXGDcAI7XgguMG8DxWnCBcQM4XgsuMG4Ax2vBBcYN4HgtuMC4ARyvBRcYN4DjteAC4wZwvBZcYNwAjteCC4wbwPFacIFxAzheCy4wbgDHa8EFxg3geC24wJaB4znv6xwPi+o/TQvGSy8Z+HjNeb3HwNt+8ZYMvELYH2OB8doFLjBuAMdrwQXGDeB4LbjAuAEcrwUXGDeA47XgAuMGcLwWXGDcAI7XgguMG8DxWnCBcQM4XgsuMG4Ax2vBBcYN4HgtuMC4ARyvBRcYN4DjteAC4wZwvBZcYNwAjteCC4wbwPFacIFxAzheCy4wbgDHa8EFxg3geC24wLgBHK8FFxg3gOO14ALjBnC8Flxg3ACO14LxwB9fQwhRpET2YAAAAABJRU5ErkJggg\u003d\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
