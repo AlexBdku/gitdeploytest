@@ -1,5 +1,5 @@
 {
-  "type": "S3",
+  "type": "Snowflake",
   "managed": true,
   "featureGroup": false,
   "formatType": "parquet",
@@ -46,28 +46,31 @@
   },
   "tags": [],
   "params": {
-    "bucket": "gis-dataiker-2-data-1",
-    "metastoreSynchronizationEnabled": true,
-    "metastoreDatabaseName": "default",
-    "metastoreTableName": "${projectKey}_adresses_lat_long_prepared",
-    "connection": "dataiku-managed-storage",
-    "path": "/managed-dss-data/${projectKey}/adresses_lat_long_prepared",
+    "connection": "managed-snowflake",
     "notReadyIfEmpty": false,
-    "filesSelectionRules": {
-      "mode": "ALL",
-      "excludeRules": [],
-      "includeRules": [],
-      "explicitFiles": []
-    },
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${NODE}_${projectKey}_ADRESSES_LAT_LONG_PREPARED",
+    "schema": "PUBLIC",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeDescriptionsAsSQLComment": false,
+    "noDropOnSchemaMismatch": false,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "datetimenotzReadMode": "AS_IS",
+    "dateonlyReadMode": "AS_IS",
     "variablesExpansionLoopConfig": {
       "enabled": false,
       "mode": "CREATE_VARIABLE_FOR_EACH_COLUMN",
       "replacements": []
-    }
+    },
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
   },
   "schema": {
     "columns": [
-      {"name":"adresses","type":"string"},
+      {"name":"adresses","type":"string","maxLength":16777216},
       {"name":"latitude","type":"double"},
       {"name":"longitude","type":"double"},
       {"name":"geopoint","type":"geopoint"}
