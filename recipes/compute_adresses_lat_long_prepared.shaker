@@ -64,6 +64,35 @@
         "lon_column": "longitude"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsConcat",
+      "params": {
+        "outputColumn": "latlong",
+        "columns": [
+          "latitude",
+          "longitude"
+        ],
+        "join": ";"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "latlong"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -95,6 +124,7 @@
   "columnWidthsByName": {
     "Piazza del Colosseo, 1, 00184 Roma RM, Italy": 300,
     "latitude": 134,
+    "latlong": 267,
     "geopoint": 300,
     "adresses": 300,
     "POINT(2.3719459969419745 48.84450701477215)": 300,
