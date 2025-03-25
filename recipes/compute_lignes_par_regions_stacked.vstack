@@ -67,8 +67,23 @@
     },
     {
       "preFilter": {
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
+          "conditions": [
+            {
+              "input": "VOYAGEURS",
+              "col": "LIBELLE",
+              "string": "O",
+              "$showList": false,
+              "operator": "contains"
+            }
+          ]
+        },
+        "$status": {},
         "distinct": false,
-        "enabled": false
+        "enabled": true
       },
       "originLabel": "gare",
       "index": 1,
@@ -85,6 +100,19 @@
   ],
   "copySchemaFromDatasetWithName": "lignes_par_regions",
   "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "$latestOperator": "\u0026\u0026",
+      "$filterOptions": "rules",
+      "conditions": [
+        {
+          "input": "CODE_LIGNE",
+          "col": "Geoshape_regions",
+          "$showList": false,
+          "operator": "contains"
+        }
+      ]
+    },
     "$status": {
       "schema": {
         "columns": [
