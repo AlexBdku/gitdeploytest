@@ -78,7 +78,7 @@
         },
         "inlinedPluginConfig": {}
       },
-      "endpoint_url": "https://api.navitia.io/v1/coverage/"
+      "endpoint_url": "https://api.sncf.com/v1/coverage/sncf/journeys?from\u003dadmin:fr:75056\u0026to\u003dadmin:fr:69123\u0026datetime\u003d20250325T085253"
     },
     "notReadyIfEmpty": false,
     "previewAllPartitions": false
