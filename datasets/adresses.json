@@ -52,7 +52,9 @@
     "importSourceType": "NONE"
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"adresses","type":"string"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",

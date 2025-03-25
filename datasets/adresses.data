@@ -1,3 +1,16 @@
 {
-  "data": []
+  "data": [
+    [
+      "201-203 rue de Bercy, 75012 Paris, France"
+    ],
+    [
+      "Piazza del Colosseo 1, Italy"
+    ]
+  ],
+  "schema": {
+    "columns": [
+      {"name":"adresses","type":"string"}
+    ],
+    "userModified": false
+  }
 }
