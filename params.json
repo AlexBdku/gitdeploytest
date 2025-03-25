@@ -159,8 +159,9 @@
     },
     "dkuProperties": []
   },
-  "name": "tmp",
+  "name": "[TRAINING] - Train station analysis",
   "projectStatus": "Sandbox",
+  "imgPattern": 8,
   "metrics": {
     "probes": [],
     "engineConfig": {
