@@ -12,6 +12,10 @@
       },
       {
         "d": true,
+        "name": "CODE_UIC"
+      },
+      {
+        "d": true,
         "name": "LIBELLE"
       },
       {
@@ -85,7 +89,6 @@
       "params": {
         "columns": [
           "RG_TRONCON",
-          "CODE_UIC",
           "longitude",
           "latitude"
         ],
