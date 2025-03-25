@@ -1,6 +1,40 @@
 {
   "mode": "UNION",
   "originColumnName": "original_dataset",
+  "selectedColumns": [
+    "CODE_LIGNE",
+    "LIB_LIGNE",
+    "REGION",
+    "RG_TRONCON",
+    "PKD",
+    "PKF",
+    "IDGAIA",
+    "X_D_L93",
+    "Y_D_L93",
+    "X_F_L93",
+    "Y_F_L93",
+    "X_D_WGS84",
+    "Y_D_WGS84",
+    "X_F_WGS84",
+    "Y_F_WGS84",
+    "C_GEO_D",
+    "C_GEO_F",
+    "Geo Point",
+    "Geo Shape",
+    "CODE_UIC",
+    "LIBELLE",
+    "FRET",
+    "VOYAGEURS",
+    "PK",
+    "COMMUNE",
+    "DEPARTEMEN",
+    "IDRESEAU",
+    "X_L93",
+    "Y_L93",
+    "X_WGS84",
+    "Y_WGS84",
+    "C_GEO"
+  ],
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -57,6 +91,141 @@
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "CODE_LIGNE",
+            "type": "string"
+          },
+          {
+            "name": "LIB_LIGNE",
+            "type": "string"
+          },
+          {
+            "name": "REGION",
+            "type": "string"
+          },
+          {
+            "name": "RG_TRONCON",
+            "type": "string"
+          },
+          {
+            "name": "PKD",
+            "type": "string"
+          },
+          {
+            "name": "PKF",
+            "type": "string"
+          },
+          {
+            "name": "IDGAIA",
+            "type": "string"
+          },
+          {
+            "name": "X_D_L93",
+            "type": "string"
+          },
+          {
+            "name": "Y_D_L93",
+            "type": "string"
+          },
+          {
+            "name": "X_F_L93",
+            "type": "string"
+          },
+          {
+            "name": "Y_F_L93",
+            "type": "string"
+          },
+          {
+            "name": "X_D_WGS84",
+            "type": "string"
+          },
+          {
+            "name": "Y_D_WGS84",
+            "type": "string"
+          },
+          {
+            "name": "X_F_WGS84",
+            "type": "string"
+          },
+          {
+            "name": "Y_F_WGS84",
+            "type": "string"
+          },
+          {
+            "name": "C_GEO_D",
+            "type": "string"
+          },
+          {
+            "name": "C_GEO_F",
+            "type": "string"
+          },
+          {
+            "name": "Geo Point",
+            "type": "string"
+          },
+          {
+            "name": "Geo Shape",
+            "type": "string"
+          },
+          {
+            "name": "CODE_UIC",
+            "type": "string"
+          },
+          {
+            "name": "LIBELLE",
+            "type": "string"
+          },
+          {
+            "name": "FRET",
+            "type": "string"
+          },
+          {
+            "name": "VOYAGEURS",
+            "type": "string"
+          },
+          {
+            "name": "PK",
+            "type": "string"
+          },
+          {
+            "name": "COMMUNE",
+            "type": "string"
+          },
+          {
+            "name": "DEPARTEMEN",
+            "type": "string"
+          },
+          {
+            "name": "IDRESEAU",
+            "type": "string"
+          },
+          {
+            "name": "X_L93",
+            "type": "string"
+          },
+          {
+            "name": "Y_L93",
+            "type": "string"
+          },
+          {
+            "name": "X_WGS84",
+            "type": "string"
+          },
+          {
+            "name": "Y_WGS84",
+            "type": "string"
+          },
+          {
+            "name": "C_GEO",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
