@@ -7,7 +7,7 @@
     "Geoshape_gare",
     "Geopoint_regions",
     "Geopoint_gare",
-    "REGIONS",
+    "REGION",
     "COMMUNE"
   ],
   "engineParams": {
@@ -59,9 +59,9 @@
         "CODE_LIGNE",
         "Geo Shape",
         "",
-        "REGION",
-        "",
         "Geo Point",
+        "",
+        "REGION",
         ""
       ]
     },
@@ -77,9 +77,9 @@
         null,
         "Geo Shape",
         null,
-        "COMMUNE",
+        "Geo Point",
         null,
-        "Geo Point"
+        "COMMUNE"
       ]
     }
   ],
@@ -109,7 +109,7 @@
             "type": "string"
           },
           {
-            "name": "REGIONS",
+            "name": "REGION",
             "type": "string"
           },
           {
