@@ -6,7 +6,7 @@
     "Geoshape_regions",
     "Geoshape_gare",
     "REGIONS",
-    "DEPARTEMENT"
+    "COMMUNE"
   ],
   "engineParams": {
     "hive": {
@@ -58,7 +58,7 @@
         "Geo Shape",
         "",
         "REGION",
-        "LIB_LIGNE"
+        ""
       ]
     },
     {
@@ -73,7 +73,7 @@
         null,
         "Geo Shape",
         null,
-        "DEPARTEMEN"
+        "COMMUNE"
       ]
     }
   ],
@@ -99,7 +99,7 @@
             "type": "string"
           },
           {
-            "name": "DEPARTEMENT",
+            "name": "COMMUNE",
             "type": "string"
           }
         ],
