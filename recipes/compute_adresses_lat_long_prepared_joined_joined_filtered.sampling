@@ -5,14 +5,14 @@
     "$filterOptions": "rules",
     "conditions": [
       {
-        "input": "lignes_LIB_LIGNE",
+        "input": "CODE_LIGNE",
         "col": "geopoint",
         "string": "930000",
         "$showList": false,
         "operator": "contains"
       },
       {
-        "input": "lignes_LIB_LIGNE",
+        "input": "CODE_LIGNE",
         "col": "adresses",
         "string": "830000",
         "$showList": false,
