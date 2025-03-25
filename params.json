@@ -162,6 +162,7 @@
   "name": "[TRAINING] - Train Journey Analysis",
   "projectStatus": "Sandbox",
   "imgPattern": 8,
+  "showInitials": false,
   "metrics": {
     "probes": [],
     "engineConfig": {
