@@ -77,7 +77,15 @@
               "col": "LIBELLE",
               "string": "O",
               "$showList": false,
-              "operator": "contains [string]i"
+              "operator": "not empty"
+            },
+            {
+              "input": "VOYAGEURS",
+              "col": "CODE_UIC",
+              "string": "O",
+              "$showList": false,
+              "num": 0,
+              "operator": "contains"
             }
           ]
         },
