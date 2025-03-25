@@ -62,6 +62,13 @@
   "schema": {
     "columns": [
       {"name":"adresses","type":"string","maxLength":16777216},
+      {"name":"LIBELLE_first","type":"string","maxLength":16777216},
+      {"name":"CODE_LIGNE_first","type":"string","maxLength":16777216},
+      {"name":"COMMUNE_first","type":"string","maxLength":16777216},
+      {"name":"DEPARTEMEN_first","type":"string","maxLength":16777216},
+      {"name":"IDRESEAU_first","type":"string","maxLength":16777216},
+      {"name":"distance_min","type":"double"},
+      {"name":"Geo Shape_first","type":"string","maxLength":16777216},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
