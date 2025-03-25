@@ -1,0 +1,187 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "CODE_LIGNE",
+      "table": 0
+    },
+    {
+      "name": "LIB_LIGNE",
+      "table": 0
+    },
+    {
+      "name": "REGION",
+      "table": 0
+    },
+    {
+      "name": "RG_TRONCON",
+      "table": 0
+    },
+    {
+      "name": "PKD",
+      "table": 0
+    },
+    {
+      "name": "PKF",
+      "table": 0
+    },
+    {
+      "name": "IDGAIA",
+      "table": 0
+    },
+    {
+      "name": "X_D_L93",
+      "table": 0
+    },
+    {
+      "name": "Y_D_L93",
+      "table": 0
+    },
+    {
+      "name": "X_F_L93",
+      "table": 0
+    },
+    {
+      "name": "Y_F_L93",
+      "table": 0
+    },
+    {
+      "name": "X_D_WGS84",
+      "table": 0
+    },
+    {
+      "name": "Y_D_WGS84",
+      "table": 0
+    },
+    {
+      "name": "X_F_WGS84",
+      "table": 0
+    },
+    {
+      "name": "Y_F_WGS84",
+      "table": 0
+    },
+    {
+      "name": "C_GEO_D",
+      "table": 0
+    },
+    {
+      "name": "C_GEO_F",
+      "table": 0
+    },
+    {
+      "name": "Geo Point",
+      "table": 0
+    },
+    {
+      "name": "Geo Shape",
+      "table": 0
+    },
+    {
+      "name": "adresses",
+      "table": 1
+    },
+    {
+      "name": "latitude",
+      "table": 1
+    },
+    {
+      "name": "longitude",
+      "table": 1
+    },
+    {
+      "name": "geopoint",
+      "table": 1
+    },
+    {
+      "name": "CODE_UIC",
+      "table": 1
+    },
+    {
+      "name": "LIBELLE",
+      "table": 1
+    },
+    {
+      "name": "COMMUNE",
+      "table": 1
+    },
+    {
+      "name": "DEPARTEMEN",
+      "table": 1
+    },
+    {
+      "name": "IDRESEAU",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "spark-XS-2-workers-of-1-CPU-3Gb-Ram",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "lignes_par_regions",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "adresses_lat_long_prepared_joined",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
