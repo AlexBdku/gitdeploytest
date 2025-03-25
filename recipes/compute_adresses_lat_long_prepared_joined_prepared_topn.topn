@@ -5,9 +5,22 @@
   },
   "retrievedColumnsSelectionMode": "ALL",
   "firstRows": 1,
-  "keys": [],
+  "keys": [
+    "adresses"
+  ],
   "computedColumns": [],
-  "retrievedColumns": [],
+  "retrievedColumns": [
+    "adresses",
+    "geopoint",
+    "LIBELLE",
+    "CODE_LIGNE",
+    "COMMUNE",
+    "DEPARTEMEN",
+    "IDRESEAU",
+    "Geo Point",
+    "distance",
+    "Geo Shape"
+  ],
   "lastRows": 0,
   "duplicateCount": false,
   "engineParams": {
@@ -49,7 +62,12 @@
   },
   "rank": false,
   "denseRank": false,
-  "orders": [],
+  "orders": [
+    {
+      "column": "distance",
+      "desc": false
+    }
+  ],
   "rowNumber": false,
   "outputColumnNameOverrides": {}
 }
