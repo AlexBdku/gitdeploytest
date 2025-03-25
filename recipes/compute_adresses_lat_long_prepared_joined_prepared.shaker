@@ -1,6 +1,48 @@
 {
   "columnsSelection": {
-    "mode": "ALL"
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "adresses"
+      },
+      {
+        "d": true,
+        "name": "geopoint"
+      },
+      {
+        "d": true,
+        "name": "LIBELLE"
+      },
+      {
+        "d": true,
+        "name": "CODE_LIGNE"
+      },
+      {
+        "d": true,
+        "name": "COMMUNE"
+      },
+      {
+        "d": true,
+        "name": "DEPARTEMEN"
+      },
+      {
+        "d": true,
+        "name": "IDRESEAU"
+      },
+      {
+        "d": true,
+        "name": "Geo Point"
+      },
+      {
+        "d": true,
+        "name": "distance"
+      },
+      {
+        "d": true,
+        "name": "Geo Shape"
+      }
+    ]
   },
   "explorationSampling": {
     "_refreshTrigger": 0,
@@ -30,8 +72,43 @@
   "explorationFilters": [],
   "columnOrder": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "RG_TRONCON",
+          "CODE_UIC",
+          "longitude",
+          "latitude"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoDistanceProcessor",
+      "params": {
+        "output": "distance",
+        "input2": "Geo Point",
+        "outputUnit": "KILOMETERS",
+        "input1": "geopoint",
+        "compareTo": "COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -58,7 +135,22 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "CODE_UIC": 106,
+    "distance": 148,
+    "latitude": 141,
+    "LIBELLE": 239,
+    "geopoint": 232,
+    "adresses": 300,
+    "IDRESEAU": 100,
+    "CODE_LIGNE": 100,
+    "Geo Shape": 300,
+    "COMMUNE": 100,
+    "DEPARTEMEN": 100,
+    "Geo Point": 232,
+    "RG_TRONCON": 100,
+    "longitude": 141
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
