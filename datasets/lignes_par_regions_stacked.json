@@ -72,7 +72,7 @@
       {"name":"Geoshape_gare","type":"string"},
       {"name":"Geopoint_regions","type":"string"},
       {"name":"Geopoint_gare","type":"string"},
-      {"name":"REGIONS","type":"string"},
+      {"name":"REGION","type":"string"},
       {"name":"COMMUNE","type":"string"}
     ],
     "userModified": true
