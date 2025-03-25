@@ -63,6 +63,7 @@
     "columns": [
       {"name":"adresses","type":"string","maxLength":16777216},
       {"name":"geopoint","type":"geopoint"},
+      {"name":"CODE_UIC","type":"bigint"},
       {"name":"LIBELLE","type":"string","maxLength":16777216},
       {"name":"CODE_LIGNE","type":"string","maxLength":16777216},
       {"name":"COMMUNE","type":"string","maxLength":16777216},
