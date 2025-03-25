@@ -60,7 +60,18 @@
     "numPartitions": -1
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"adresses","type":"string","maxLength":16777216},
+      {"name":"geopoint","type":"geopoint"},
+      {"name":"LIBELLE","type":"string","maxLength":16777216},
+      {"name":"CODE_LIGNE","type":"string","maxLength":16777216},
+      {"name":"COMMUNE","type":"string","maxLength":16777216},
+      {"name":"DEPARTEMEN","type":"string","maxLength":16777216},
+      {"name":"IDRESEAU","type":"string","maxLength":16777216},
+      {"name":"Geo Point","type":"geopoint","maxLength":16777216},
+      {"name":"distance","type":"double"},
+      {"name":"Geo Shape","type":"string","maxLength":16777216}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
