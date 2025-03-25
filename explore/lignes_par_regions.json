@@ -3,10 +3,108 @@
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
-      "mode": "ALL"
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "CODE_LIGNE",
+          "d": true
+        },
+        {
+          "name": "LIB_LIGNE",
+          "d": true
+        },
+        {
+          "name": "REGION",
+          "d": true
+        },
+        {
+          "name": "RG_TRONCON",
+          "d": true
+        },
+        {
+          "name": "PKD",
+          "d": true
+        },
+        {
+          "name": "PKF",
+          "d": true
+        },
+        {
+          "name": "IDGAIA",
+          "d": true
+        },
+        {
+          "name": "X_D_L93",
+          "d": true
+        },
+        {
+          "name": "Y_D_L93",
+          "d": true
+        },
+        {
+          "name": "X_F_L93",
+          "d": true
+        },
+        {
+          "name": "Y_F_L93",
+          "d": true
+        },
+        {
+          "name": "X_D_WGS84",
+          "d": true
+        },
+        {
+          "name": "Y_D_WGS84",
+          "d": true
+        },
+        {
+          "name": "X_F_WGS84",
+          "d": true
+        },
+        {
+          "name": "Y_F_WGS84",
+          "d": true
+        },
+        {
+          "name": "C_GEO_D",
+          "d": true
+        },
+        {
+          "name": "C_GEO_F",
+          "d": true
+        },
+        {
+          "name": "Geo Point",
+          "d": true
+        },
+        {
+          "name": "Geo Shape",
+          "d": true
+        }
+      ]
     },
     "columnOrder": [],
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "CODE_LIGNE": 100,
+      "LIB_LIGNE": 300,
+      "REGION": 197,
+      "RG_TRONCON": 100,
+      "PKD": 100,
+      "PKF": 100,
+      "IDGAIA": 267,
+      "X_D_L93": 141,
+      "Y_D_L93": 141,
+      "X_F_L93": 141,
+      "Y_F_L93": 141,
+      "X_D_WGS84": 141,
+      "Y_D_WGS84": 141,
+      "X_F_WGS84": 141,
+      "Y_F_WGS84": 141,
+      "C_GEO_D": 300,
+      "C_GEO_F": 300,
+      "Geo Point": 300,
+      "Geo Shape": 300
+    },
     "columnUseScientificNotationByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
@@ -64,7 +162,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
