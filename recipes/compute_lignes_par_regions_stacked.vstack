@@ -1,17 +1,12 @@
 {
-  "mode": "CUSTOM",
+  "mode": "REMAP",
   "originColumnName": "original_dataset",
   "selectedColumns": [
     "CODE_LIGNE",
-    "LIB_LIGNE",
-    "REGION",
-    "RG_TRONCON",
-    "IDGAIA",
-    "Geo Point",
-    "Geo Shape",
-    "LIBELLE",
-    "COMMUNE",
-    "DEPARTEMEN"
+    "Geoshape_regions",
+    "Geoshape_gare",
+    "REGIONS",
+    "DEPARTEMENT"
   ],
   "engineParams": {
     "hive": {
@@ -57,7 +52,14 @@
         "enabled": false
       },
       "originLabel": "lignes_par_regions",
-      "index": 0
+      "index": 0,
+      "columnsMatch": [
+        "CODE_LIGNE",
+        "Geo Shape",
+        "",
+        "REGION",
+        "LIB_LIGNE"
+      ]
     },
     {
       "preFilter": {
@@ -65,7 +67,14 @@
         "enabled": false
       },
       "originLabel": "gare",
-      "index": 1
+      "index": 1,
+      "columnsMatch": [
+        "CODE_LIGNE",
+        null,
+        "Geo Shape",
+        null,
+        "DEPARTEMEN"
+      ]
     }
   ],
   "copySchemaFromDatasetWithName": "lignes_par_regions",
@@ -78,39 +87,19 @@
             "type": "string"
           },
           {
-            "name": "LIB_LIGNE",
+            "name": "Geoshape_regions",
             "type": "string"
           },
           {
-            "name": "REGION",
+            "name": "Geoshape_gare",
             "type": "string"
           },
           {
-            "name": "RG_TRONCON",
+            "name": "REGIONS",
             "type": "string"
           },
           {
-            "name": "IDGAIA",
-            "type": "string"
-          },
-          {
-            "name": "Geo Point",
-            "type": "string"
-          },
-          {
-            "name": "Geo Shape",
-            "type": "string"
-          },
-          {
-            "name": "LIBELLE",
-            "type": "string"
-          },
-          {
-            "name": "COMMUNE",
-            "type": "string"
-          },
-          {
-            "name": "DEPARTEMEN",
+            "name": "DEPARTEMENT",
             "type": "string"
           },
           {
@@ -124,5 +113,6 @@
     "distinct": false,
     "enabled": false
   },
+  "selectedColumnsIndexes": [],
   "addOriginColumn": true
 }
