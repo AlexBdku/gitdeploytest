@@ -334,7 +334,43 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [],
+    "explorationFilters": [
+      {
+        "column": "lignes_REGION",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "lignes_REGION",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "Provence-Alpes-Côte-d\u0027Azur": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "lignes_REGION",
+          "selectedValues": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "lignes_REGION",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
     "previewMode": "ALL_ROWS"
   },
   "charts": [
