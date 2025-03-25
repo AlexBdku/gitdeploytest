@@ -70,7 +70,7 @@
       {"name":"adresses","type":"string"},
       {"name":"latitude","type":"double"},
       {"name":"longitude","type":"double"},
-      {"name":"geopoint","type":"string"}
+      {"name":"geopoint","type":"geopoint"}
     ],
     "userModified": true
   },
