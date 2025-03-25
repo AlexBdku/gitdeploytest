@@ -5,6 +5,8 @@
     "CODE_LIGNE",
     "Geoshape_regions",
     "Geoshape_gare",
+    "Geopoint_regions",
+    "Geopoint_gare",
     "REGIONS",
     "COMMUNE"
   ],
@@ -58,6 +60,8 @@
         "Geo Shape",
         "",
         "REGION",
+        "",
+        "Geo Point",
         ""
       ]
     },
@@ -73,7 +77,9 @@
         null,
         "Geo Shape",
         null,
-        "COMMUNE"
+        "COMMUNE",
+        null,
+        "Geo Point"
       ]
     }
   ],
@@ -92,6 +98,14 @@
           },
           {
             "name": "Geoshape_gare",
+            "type": "string"
+          },
+          {
+            "name": "Geopoint_regions",
+            "type": "string"
+          },
+          {
+            "name": "Geopoint_gare",
             "type": "string"
           },
           {
