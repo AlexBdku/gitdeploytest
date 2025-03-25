@@ -91,7 +91,7 @@
         },
         "$status": {},
         "distinct": false,
-        "enabled": true
+        "enabled": false
       },
       "originLabel": "gare",
       "index": 1,
