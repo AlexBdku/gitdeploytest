@@ -1,6 +1,5 @@
 {
   "mode": "REMAP",
-  "originColumnName": "original_dataset",
   "selectedColumns": [
     "CODE_LIGNE",
     "Geoshape_regions",
@@ -10,6 +9,7 @@
     "REGION",
     "COMMUNE"
   ],
+  "originColumnName": "original_dataset",
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -47,6 +47,7 @@
       }
     }
   },
+  "copySchemaFromDatasetWithName": "lignes_par_regions",
   "virtualInputs": [
     {
       "preFilter": {
@@ -69,27 +70,25 @@
       "preFilter": {
         "uiData": {
           "mode": "\u0026\u0026",
-          "$latestOperator": "\u0026\u0026",
-          "$filterOptions": "rules",
           "conditions": [
             {
               "input": "VOYAGEURS",
               "col": "LIBELLE",
               "string": "O",
-              "$showList": false,
-              "operator": "not empty"
+              "num": 0.0,
+              "operator": "not empty",
+              "num2": 0.0
             },
             {
               "input": "VOYAGEURS",
               "col": "CODE_UIC",
               "string": "O",
-              "$showList": false,
-              "num": 0,
-              "operator": "contains"
+              "num": 0.0,
+              "operator": "contains",
+              "num2": 0.0
             }
           ]
         },
-        "$status": {},
         "distinct": false,
         "enabled": false
       },
@@ -106,59 +105,22 @@
       ]
     }
   ],
-  "copySchemaFromDatasetWithName": "lignes_par_regions",
+  "selectedColumnsIndexes": [],
   "postFilter": {
     "uiData": {
       "mode": "\u0026\u0026",
-      "$latestOperator": "\u0026\u0026",
-      "$filterOptions": "rules",
       "conditions": [
         {
           "input": "CODE_LIGNE",
           "col": "Geoshape_regions",
-          "$showList": false,
-          "operator": "contains"
+          "num": 0.0,
+          "operator": "contains",
+          "num2": 0.0
         }
       ]
-    },
-    "$status": {
-      "schema": {
-        "columns": [
-          {
-            "name": "CODE_LIGNE",
-            "type": "string"
-          },
-          {
-            "name": "Geoshape_regions",
-            "type": "string"
-          },
-          {
-            "name": "Geoshape_gare",
-            "type": "string"
-          },
-          {
-            "name": "Geopoint_regions",
-            "type": "string"
-          },
-          {
-            "name": "Geopoint_gare",
-            "type": "string"
-          },
-          {
-            "name": "REGION",
-            "type": "string"
-          },
-          {
-            "name": "COMMUNE",
-            "type": "string"
-          }
-        ],
-        "userModified": false
-      }
     },
     "distinct": false,
     "enabled": false
   },
-  "selectedColumnsIndexes": [],
   "addOriginColumn": false
 }
