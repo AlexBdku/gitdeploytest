@@ -69,7 +69,8 @@
     "columns": [
       {"name":"adresses","type":"string"},
       {"name":"latitude","type":"double"},
-      {"name":"longitude","type":"double"}
+      {"name":"longitude","type":"double"},
+      {"name":"geopoint","type":"string"}
     ],
     "userModified": true
   },
