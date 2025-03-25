@@ -54,7 +54,7 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "GeoPointCreator",
@@ -93,10 +93,15 @@
   },
   "analysisColumnData": {},
   "columnWidthsByName": {
+    "Piazza del Colosseo, 1, 00184 Roma RM, Italy": 300,
     "latitude": 134,
     "geopoint": 300,
     "adresses": 300,
-    "longitude": 141
+    "POINT(2.3719459969419745 48.84450701477215)": 300,
+    "POINT(12.49425816000172 41.88997820573391)": 300,
+    "201-203 rue de Bercy, 75012 Paris, France": 300,
+    "longitude": 141,
+    "labels": 100
   },
   "sorting": [],
   "globalSearchQuery": "",
