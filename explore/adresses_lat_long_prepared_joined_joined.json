@@ -10,19 +10,7 @@
           "d": true
         },
         {
-          "name": "latitude",
-          "d": true
-        },
-        {
-          "name": "longitude",
-          "d": true
-        },
-        {
           "name": "geopoint",
-          "d": true
-        },
-        {
-          "name": "CODE_UIC",
           "d": true
         },
         {
@@ -31,10 +19,6 @@
         },
         {
           "name": "CODE_LIGNE",
-          "d": true
-        },
-        {
-          "name": "RG_TRONCON",
           "d": true
         },
         {
@@ -51,6 +35,10 @@
         },
         {
           "name": "Geo Point",
+          "d": true
+        },
+        {
+          "name": "distance",
           "d": true
         },
         {
@@ -168,7 +156,8 @@
       "lignes_C_GEO_D": 300,
       "lignes_C_GEO_F": 300,
       "lignes_Geo Point": 295,
-      "lignes_Geo Shape": 300
+      "lignes_Geo Shape": 300,
+      "distance": 148
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -231,7 +220,43 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [],
+    "explorationFilters": [
+      {
+        "column": "lignes_REGION",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "lignes_REGION",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "Provence-Alpes-Côte-d\u0027Azur": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "lignes_REGION",
+          "selectedValues": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "lignes_REGION",
+          "params": {
+            "type": "Text",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
     "previewMode": "ALL_ROWS"
   },
   "charts": [
@@ -344,7 +369,18 @@
               },
               "customColors": {}
             },
-            "uaColor": []
+            "uaColor": [
+              {
+                "treatAsAlphanum": false,
+                "isA": "ua",
+                "adminLevel": 0,
+                "multiplier": "Auto",
+                "useParenthesesForNegativeValues": false,
+                "shouldFormatInPercentage": false,
+                "column": "lignes_REGION",
+                "type": "ALPHANUM"
+              }
+            ]
           },
           {
             "geometry": [],
@@ -567,6 +603,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -715,7 +752,7 @@
           },
           "displayPointer": false
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAWlJREFUeF7t08FNgkEYBuFdeyBahxdDGUop1GEpYBmEC3Vg7MGfcDDxAAUwebaCb2b2ncNLG5hpOnBD4PgnEFjguIE4ngULHDcQx7NggeMG4ngWLHDcQBzPggWOG4jjWbDAcQNxPAsWOG4gjmfBAscNxPEsWOC4gTieBQscNxDHs2CB4wbieBYscNxAHM+CBY4biONZsMBxA3E8CxY4biCOZ8ECxw3E8SxY4LiBOJ4FCxw3EMezYIHjBuJ4Fixw3EAcz4IFjhuI41mwwHEDcTwLFjhuII5nwQLHDcTxLFjguIE4ngULHDcQx7NggeMG4ngWLHDcwB28r+P35/vb8/bR6S34RsFlWeacc3n0uNf7Bf5XcXf4ed2sV6dC2D8GgccY+8P592P98lQKK3Cx5g0mC46HFljguIE4ngULHDcQx7NggeMG4ngWLHDcQBzPggWOG4jjWbDAcQNxPAsWOG4gjmfBAscNxPEuodkQUe4NiwoAAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABQCAYAAADSm7GJAAAAAXNSR0IArs4c6QAAAzRJREFUeF7t2U9I03EYBvD9JENPUURRSCoeNrXsEtEfEYo6uBVYUNClQ65MkyCasxGUdZkuIwjLrHnpEhSUl61DlBBaEZ0scxKhSBRFFEFlILQYdSm21PF74f0+38eT6G8v7/N89g5Bx8Mv6AYc6HQM5yEw+JuAwAQGbwA8Hi+YwOANgMfjBRMYvAHweLxgAoM3AB6PF0xg8AbA4/GCCQzeAHg8XjCBwRsAj8cLJjB4A+DxeMEEBm8APB4vmMDmN5A+teigc/bLNfOTzD+BFRfcc+jBh9arW5fNvx7zX2EFsPlM+SeAA55qu19RUFDYV9JVty3/WnBeCQeMQ+NOEljgt5GHDSujdQPu1GTuFFjgDElpe7J+ofMz+apzB3TO/7394IOfPxZPH78QhM+ZC9mo4EP9l721jS3jmTCP+i/t39R45HquYOl77Z+d7V2LPR2DC1Z9/3pyKrbzjLkftPlvbhTwvzGH4j2jtcHW6j8/d24/ed+xe8Py09nq+JEc+VTkr1mSf1VmvtJo4GyV33n8rn7XxhV3cyA/K/LXrDOTKr+t4YBnq2E6OTJT7K8pnO05lN/DAqcHIz5nSzSVDWo68TxeHFgTREG0+q9oGxAJbLEy7Ee0xaZ/RYcDHvVWvqweH6si8O8G4IDHfL6yylRqksCgwHOB7d4buBG6mdg3l2dNfwbugk0HcXt/ArvdqLJ5BFYG4vY6UMDDAy/ebG5YXeJ2SSbPgwI2GUJqdyuBu/cEZkK3Elb8w8FK4N6Jc0+by9vWS12NprlWAmsCkN7FSuDe17ETzRXhTulyNcy3EjhTfN9ELNpUHo5kvr8yGbt4uCx8VAOI2ztYC5wpsmX4wLe1S6tKm7yhj24Xq2We1cBaECT3ILBkuwpmE1gBguQKBJZsV8FsAitAkFyBwJLtKphNYAUIkisQWLJdBbMJrABBcgUCS7arYDaBFSBIrkBgyXYVzCawAgTJFQgs2a6C2QRWgCC5AoEl21Uwm8AKECRXILBkuwpmE1gBguQKBJZsV8FsAitAkFyBwJLtKphNYAUIkisQWLJdBbMJrABBcgUCS7arYDaBFSBIrkBgyXYVzP4FINR0Ub/YmSMAAAAASUVORK5CYII\u003d",
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "legendFormatting": {
