@@ -186,8 +186,6 @@
               "measureIdx": 0,
               "label": "Average of Nombre de voyageur, descending"
             },
-            "prefix": "",
-            "suffix": "",
             "multiplier": "Auto",
             "hideTrailingZeros": true,
             "digitGrouping": "DEFAULT",
